@@ -6,16 +6,29 @@ Testing Strategy for Ueberauth
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ueberauth_testing` to your list of dependencies in `mix.exs`:
+1. Add `:ueberauth_testing` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:ueberauth_testing, "~> 1.0.0"}
-  ]
-end
-```
+    ```elixir
+    def deps do
+      [{:ueberauth_testing, "~> 0.2"}]
+    end
+    ```
+
+2. Add Testing to your Ueberauth configuration:
+
+    ```elixir
+    config :ueberauth, Ueberauth,
+      providers: [
+        testing: {Ueberauth.Strategy.Testing, []}
+      ]
+    ```
+
+
+3.  Test your oauth callbacks:
+
+    ```elixir
+    get(auth_path(conn, :callback, "testing"))
+    ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
