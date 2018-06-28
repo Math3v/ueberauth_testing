@@ -1,4 +1,6 @@
 # Ueberauth Testing Strategy
+[![CircleCI](https://circleci.com/gh/Math3v/ueberauth_testing.svg?style=svg)](https://circleci.com/gh/Math3v/ueberauth_testing)
+[![Ebert](https://ebertapp.io/github/Math3v/ueberauth_testing.svg)](https://ebertapp.io/github/Math3v/ueberauth_testing)
 
 Testing Strategy for Ueberauth
 
