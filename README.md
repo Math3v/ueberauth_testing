@@ -10,7 +10,7 @@ Testing Strategy for Ueberauth
 
     ```elixir
     def deps do
-      [{:ueberauth_testing, "~> 0.2"}]
+      [{:ueberauth_testing, "~> 1.0"}]
     end
     ```
 
