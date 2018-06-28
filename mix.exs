@@ -33,4 +33,8 @@ defmodule UeberauthTesting.MixProject do
       links: %{"GitHub" => "https://github.com/Math3v/ueberauth_testing"}
     ]
   end
+
+  defp description() do
+    "Testing Strategy for Ueberauth."
+  end
 end
